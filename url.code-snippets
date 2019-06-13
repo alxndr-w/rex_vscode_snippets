@@ -1,0 +1,16 @@
+{
+	"ID des URL-Datensatz für die Modul- oder Template-Ausgabe": {
+		"prefix": "url_getId",
+		"body": [
+		  "$${1:id}= UrlGenerator::getId();",
+		  "$${2:data}= UrlGenerator::getData();",
+		  "",
+		  "if (!$${1:id}) {",
+		  "// Wenn ein Datensatz vorliegt, dann...",
+		  "} else {",
+		  "// Default, wenn kein Datensatz vorliegt, dann...",
+		  "}"
+		],
+		"description": "ID des URL-Datensatz für die Modul- oder Template-Ausgabe"
+	  }
+}
