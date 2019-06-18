@@ -1,11 +1,12 @@
 {
 	"Erstellt ein MForm-Obejkt für die Moduleingabe": {
 		"prefix": "mform_create",
+        "scope": "php",
 		"body": [
 		  "<?php",
 		  "$${1:mform}= new MForm();",
 		  "",
-		  "$mform->addFieldset(\"${2:Eingabe}\");",
+		  "$${1:mform}->addFieldset(\"${2:Eingabe}\");",
 		  "",
 		  "echo $${1:mform}->show();",
 		  "?>"
@@ -15,6 +16,7 @@
 
 	  "Fügt ein MForm-Fieldset hinzu": {
 		"prefix": "mform_fieldset",
+        "scope": "php",
 		"body": [
 		  "$${1:mform}->addFieldset(\"${2:Mein Abschnitt}\");"
 		],
@@ -23,6 +25,7 @@
 
 	  "Ein einzeiliges MForm-Textfeld": {
 		"prefix": "mform_input_text",
+        "scope": "php",
 		"body": [
 		  "$${1:mform}->addTextField(${2:REX_VALUE, z.B. 1}, array('label' => '${3:label}'));"
 		],
@@ -31,6 +34,7 @@
 
 	  "Ein MForm-Feld vom Typ hidden": {
 		"prefix": "mform_input_hidden",
+        "scope": "php",
 		"body": [
 		  "$${1:mform}->addHiddenField(${2:REX_VALUE, z.B. 1},'${3:value}');"
 		],

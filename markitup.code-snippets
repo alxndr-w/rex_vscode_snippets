@@ -1,6 +1,7 @@
 {
 	"Ausgabe eines REX_VALUE als Textile": {
 		"prefix": "textile_parse_value",
+        "scope": "php",
 		"body": [
 		  "markitup::parseOutput('textile', 'REX_VALUE[id=${1:1} output=\"html\"]')"
 		],
@@ -9,6 +10,7 @@
 
 	  "Ausgabe einer Variable als Textile": {
 		"prefix": "textile_parse_general",
+        "scope": "php",
 		"body": [
 		  "markitup::parseOutput('textile', ${1:$value})"
 		],
@@ -17,6 +19,7 @@
 	
 	  "Ausgabe eines REX_VALUE als Markdown": {
 		"prefix": "markdown_parse_value",
+        "scope": "php",
 		"body": [
 		  "markitup::parseOutput('markdown', 'REX_VALUE[id=${1:1} output=\"html\"]')"
 		],
@@ -25,6 +28,7 @@
 
 	  "Ausgabe einer Variable als Markdown": {
 		"prefix": "markdown_parse_general",
+        "scope": "php",
 		"body": [
 		  "markitup::parseOutput('markdown', ${1:$value})"
 		],

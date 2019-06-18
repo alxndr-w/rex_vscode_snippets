@@ -1,0 +1,11 @@
+{
+	"Ruft eine Einstellung aus den Globalen Einstellungen ab": {
+		"prefix": "global_settings_getValue",
+        "scope": "php",
+		"body": [
+		  "rex_global_settings::getValue('${1:fieldname}');",
+		  ""
+		],
+		"description": "Ruft eine Einstellung aus den Globalen Einstellungen ab"
+	  }
+}

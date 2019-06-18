@@ -1,6 +1,7 @@
 {
 	"ID des URL-Datensatz für die Modul- oder Template-Ausgabe": {
 		"prefix": "url_getId",
+        "scope": "php",
 		"body": [
 		  "$${1:id}= UrlGenerator::getId();",
 		  "$${2:data}= UrlGenerator::getData();",
