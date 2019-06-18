@@ -26,9 +26,7 @@
 	"prefix": "rex_nav_yrewrite",
 	"body": [
 	  "$nav = rex_navigation::factory();",
-	  "echo $nav->get(rex_yrewrite::getCurrentDomain()->getMountId(), 1, TRUE, TRUE);",
-	  "",
-	  ""
+	  "echo $nav->get(rex_yrewrite::getCurrentDomain()->getMountId(), 1, TRUE, TRUE);"
 	],
 	"description": "REDAXO-Navigation in Abhängigkeit der aktuellen YRewrite-Domain"
   }
