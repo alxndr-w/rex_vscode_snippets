@@ -1,0 +1,33 @@
+{
+  "YRewrite Domain-Objekt": {
+	"prefix": "rex_yrewrite_domain",
+	"body": [
+	  "$${1:domain} = rex_yrewrite::getCurrentDomain();",
+	  "// $${1:domain}->getId(); // YRewrite Domain-ID",
+	  "// $${1:domain}->getMountId(); // Mountpoint",
+	  "// $${1:domain}->getStartId(); // Startartikel",
+	  "// $${1:domain}->getName();    // Name der Domain"
+	],
+	"description": "YRewrite Domain-Objekt"
+  },
+  "YRewrite Metadaten für den <head> eines Templates": {
+	"prefix": "rex_yrewrite_meta",
+	"body": [
+	  "$seo = new rex_yrewrite_seo();",
+	  "echo $seo->getTitleTag();",
+	  "echo $seo->getDescriptionTag();",
+	  "echo $seo->getRobotsTag();",
+	  "echo $seo->getHreflangTags();",
+	  "echo $seo->getCanonicalUrlTag();"
+	],
+	"description": "YRewrite Metadaten für den <head> eines Templates"
+  },
+  "REDAXO-Navigation in Abhängigkeit der aktuellen YRewrite-Domain": {
+	"prefix": "rex_nav_yrewrite",
+	"body": [
+	  "$nav = rex_navigation::factory();",
+	  "echo $nav->get(rex_yrewrite::getCurrentDomain()->getMountId(), 1, TRUE, TRUE);"
+	],
+	"description": "REDAXO-Navigation in Abhängigkeit der aktuellen YRewrite-Domain"
+  }
+}

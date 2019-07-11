@@ -1,0 +1,13 @@
+{
+	"Erstellt ein Fragment und befüllt dieses mit Inhalt": {
+		"prefix": "rex_fragment_create",
+		"body": [
+		  "$${1:fragment} = new rex_fragment();",
+		  "$${1:fragment}->setVar('$${2:key}',${1:content},false);",
+		  "echo $${1:fragment}->parse('${4:mein-fragment.php}');"
+		],
+		"description": "Erstellt ein Fragment und befüllt dieses mit Inhalt"
+	  }
+
+	  
+}

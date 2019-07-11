@@ -1,0 +1,9 @@
+{
+	"REDAXO Minify-Ausgabe im Template": {
+		"prefix": "minify",
+		"body": [
+		  "REX_MINIFY[type=${1:css/js} set=${1:key}]"
+		],
+		"description": "REDAXO Minify-Ausgabe im Template"
+	  }
+}

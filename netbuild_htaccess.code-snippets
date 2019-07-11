@@ -1,0 +1,13 @@
+{
+	"PHP-Version in htaccess setzen": {
+		"prefix": "htaccess_php",
+		"scope": "plaintext",
+        "scope": "php",
+		"body": [
+		  "<FilesMatch \"\\.(php|php5|phtml|php3|inc)$\"> ",
+		  "  SetHandler x-httpd-php7.${1:3} ",
+		  "</FilesMatch>"
+		],
+		"description": "PHP-Version in htaccess setzen"
+	  }
+}

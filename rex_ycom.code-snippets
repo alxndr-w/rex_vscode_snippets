@@ -1,0 +1,12 @@
+{
+	"REDAXO-Navigation in Abhängigkeit der YCom-Berechtigungen": {
+	"prefix": "rex_nav_ycom",
+	"body": [
+	  "$${1:nav} = rex_navigation::factory();",
+	  "$${1:nav}->addCallback('rex_ycom_auth::checkPerm');       ",
+	  "$${1:nav}->show($${2:mount_id}, 1, TRUE, TRUE);",
+	  "// Siehe: https://github.com/yakamara/redaxo_ycom/blob/master/plugins/docs/docs/de_de/main.navigation.md"
+	],
+	"description": "REDAXO-Navigation in Abhängigkeit der YCom-Berechtigungen"
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"REDAXO-Template OpenGraph-Angaben im <head>-Bereich": {
+	"prefix": "px_head_opengraph",
+	"body": [
+	  "<!-- OpenGraph --> ",
+	  "<!-- https://developers.facebook.com/docs/technical-guides/opengraph/built-in-objects/ -->",
+	  "<meta property=\"og:site_name\" content=\"<?php echo rex::getServerName(); ?>\" />",
+	  "<meta property=\"og:type\" content=\"website\">",
+	  "<meta property=\"og:title\" content=\"<?php echo $this->getValue(\"name\") ?>\" />",
+	  "<?php if($this->getValue(\"art_image\")) { ?>",
+	  "<meta property=\"og:image\" content=\"<?php echo '/image/og_image/' . $this->getValue(\"art_image\"); ?>\" />",
+	  "<?php } ?>",
+	  "<meta property=\"og:description\" content=\"<?php echo $this->getValue(\"yrewrite_description\") ?>\" />",
+	  "<!-- /OpenGraph -->"
+	],
+	"description": "REDAXO-Template OpenGraph-Angaben im <head>-Bereich"
+  },
+  "REDAXO-Template Farbschema-Angaben im <head>-Bereich": {
+	"prefix": "px_head_colorscheme",
+	"body": [
+	  "<!-- Colour Scheme -->",
+	  "<!-- http://stackoverflow.com/a/33193739 -->",
+	  "<meta name=\"theme-color\" content=\"<?php echo rex_global_settings::getValue('theme_color');?>\">",
+	  "<meta name=\"msapplication-navbutton-color\" content=\"<?php echo rex_global_settings::getValue('theme_color');?>\">",
+	  "<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"<?php echo rex_global_settings::getValue('theme_color');?>\">",
+	  "<!-- /Colour Scheme -->"
+	],
+	"description": "REDAXO-Template Farbschema-Angaben im <head>-Bereich"
+  }
+}

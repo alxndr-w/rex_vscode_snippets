@@ -15,19 +15,4 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
-	"Ruft Datensätze aus der Datenbank ab und gibt sie als Array zurück": {
-		"prefix": "rex_sql::getArray()",
-        "scope": "php",
-		"body": [
-		  "$${1:items} = rex_sql::factory()->setDebug(${2:0})->getArray(\"${3:SELECT * FROM rex_article}\", [${4:\"key\"=>$$key}]);",
-		  "$${1:items} = array_filter($${1:items});",
-		  "",
-		  "foreach($${1:items} as $${5:item}) {",
-		  "  dump(${5:item});",
-		  "}"
-		],
-		"description": "Ruft Datensätze aus der Datenbank ab und gibt sie als Array zurück"
-	  }
-	  
 }
